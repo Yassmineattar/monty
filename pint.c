@@ -9,7 +9,7 @@ void pint(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || (*stack) == NULL)
 	{
-		print_error(6, line_number);
+		err(6, line_number);
 	}
 	printf("%d\n", (*stack)->n);
 }

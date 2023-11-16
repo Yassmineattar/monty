@@ -6,8 +6,6 @@
  */
 void push(stack_t **nouv, __attribute__((unused))unsigned int line_num)
 {
-	stack_t *p;
-
 	if (nouv == NULL || *nouv == NULL)
 		exit(EXIT_FAILURE);
 	if (head == NULL)

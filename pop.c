@@ -11,7 +11,7 @@ void pop(stack_t **stack, unsigned int line_number)
 
 	if(stack == NULL || (*stack) == NULL)
 	{
-		print_error(7, line_number);
+		err(7, line_number);
 	}
     p = *stack;
     *stack = p->next;

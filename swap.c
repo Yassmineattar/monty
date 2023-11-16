@@ -9,7 +9,7 @@ void swap(stack_t **stack, unsigned int line_number)
 	stack_t *p;
 
 	if (stack == NULL || (*stack) == NULL || (*stack)->next == NULL)
-		err(8, line_number);
+		more_err(8, line_number);
 	p = (*stack)->next;
 	(*stack)->next = p->next;
 	if (p->next != NULL)

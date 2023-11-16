@@ -7,14 +7,14 @@
  */
 void pop(stack_t **stack, unsigned int line_number)
 {
-    stack_t *p;
+	stack_t *p;
 
-	if(stack == NULL || (*stack) == NULL)
+	if (stack == NULL || (*stack) == NULL)
 	{
-		err(7, line_number);
+		more_err(7, line_number);
 	}
-    p = *stack;
-    *stack = p->next;
+	p = *stack;
+	*stack = p->next;
 	if (*stack != NULL)
 		(*stack)->prev = NULL;
 	free(p);

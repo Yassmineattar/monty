@@ -2,7 +2,7 @@
 /**
  * push - function that adds a node to the stack.
  * @nouv: pointer to pointer that Points to the new node.
- * @ln: line number of of the opcode.
+ * @line_num: line number of of the opcode.
  */
 void push(stack_t **nouv, __attribute__((unused))unsigned int line_num)
 {
@@ -13,8 +13,7 @@ void push(stack_t **nouv, __attribute__((unused))unsigned int line_num)
 		head = *nouv;
 		return;
 	}
-	
-    (*nouv)->next = head;
-    head->prev = *nouv;
-    head = *nouv;
+	(*nouv)->next = head;
+	head->prev = *nouv;
+	head = *nouv;
 }

@@ -1,10 +1,12 @@
 #ifndef MONTY_H
 #define MONTY_H
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <errno.h>
 #include <stdarg.h>
+#include <ctype.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -41,5 +43,9 @@ void err(int error_code, ...);
 void more_err(int error_code, ...);
 void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+stack_t *create(int n);
+void free_nodes(void);
+void add_to_queue(stack_t **nouv, __attribute__((unused))unsigned int line_num);
 
 #endif

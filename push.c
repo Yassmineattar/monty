@@ -1,4 +1,5 @@
 #include "monty.h"
+stack_t *head = NULL;
 /**
  * push - function that adds a node to the stack.
  * @nouv: pointer to pointer that Points to the new node.

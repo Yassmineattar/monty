@@ -39,8 +39,7 @@ void read_file(FILE *fd)
 
 
 /**
- * parse_line - Separates each line into tokens to determine
- * which function to call
+ * parse_line - Separates each line into tokens
  * @buffer: line from the file
  * @line_number: line number
  * @format:  storage format. If 0 Nodes will be entered as a stack.
@@ -92,6 +91,10 @@ void find_func(char *opcode, char *value, int ln, int format)
 		{"nop", nop},
 		{"swap", swap},
 		{"add", add},
+		{"sub", sub},
+		{"div", _div},
+		{"mul", mul},
+		{"mod", _mod},
 		{NULL, NULL}
 	};
 

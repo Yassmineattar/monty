@@ -63,13 +63,13 @@ void pop(stack_t **, unsigned int);
 void swap(stack_t **, unsigned int);
 void err(int error_code, ...);
 void more_err(int error_code, ...);
-/*Math operations with nodes*/
+/*Math operations*/
 void add(stack_t **, unsigned int);
 void nop(stack_t **, unsigned int);
-/*void sub_nodes(stack_t **, unsigned int);
-void div_nodes(stack_t **, unsigned int);
-void mul_nodes(stack_t **, unsigned int);
-void mod_nodes(stack_t **, unsigned int);
-void string_err(int error_code, ...);
+void sub(stack_t **, unsigned int);
+void _div(stack_t **, unsigned int);
+void mul(stack_t **, unsigned int);
+void _mod(stack_t **, unsigned int);
+/*void string_err(int error_code, ...);
 void rotr(stack_t **, unsigned int);*/
 #endif

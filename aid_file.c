@@ -95,6 +95,7 @@ void find_func(char *opcode, char *value, int ln, int format)
 		{"div", _div},
 		{"mul", mul},
 		{"mod", _mod},
+		{"pchar", pchar},
 		{NULL, NULL}
 	};
 

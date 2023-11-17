@@ -70,6 +70,7 @@ void sub(stack_t **, unsigned int);
 void _div(stack_t **, unsigned int);
 void mul(stack_t **, unsigned int);
 void _mod(stack_t **, unsigned int);
-/*void string_err(int error_code, ...);
-void rotr(stack_t **, unsigned int);*/
+void str_err(int error_code, ...);
+void pchar(stack_t **, unsigned int);
+/*void rotr(stack_t **, unsigned int);*/
 #endif
